@@ -1,0 +1,32 @@
+Selenium Class03
+
+What are WebElements ?
+=> Every thing in a webpage is webElemnt.
+What are locators ?
+=> locators are command that provide a way to
+access the HTML elements from a web page.
+
+******XPath****8
+What is Xpath ?
+=> Xpath is just a query language that help us to identify elements
+
+Types of Xpath
+1.Absolute xpath
+=> starts with a starting node in html
+=> it starts with a single slash (/)
+
+e.g. /html/body/div/div[2]/div/div/div/div/div[2]/div/div/form/div[2]/button
+
+2.Relative Xpath
+Syntax
+//tagname[@attribute='attribute value']
+e.g. //input[@type='password']   starts with (//@ =' '] [
+english=> can u find me the tag input who has an attribute
+"type" with the attribute value "password"
+
+identify the element by its text:
+//tagname[text]()='text value']
+hey...can you find me the tag a which has text of value 'text value'
+
+e.g.
+//a[text()='Alerts & Modals']

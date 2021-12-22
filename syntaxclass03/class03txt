@@ -1,0 +1,83 @@
+***XPATH*******
+
+why do we need XPath locators
+developers may not have provided other locators in the html
+by using xpath we can identify those web element easily
+
+what is an xpath ?
+
+Xpath is just a query language that help you to identify element
+
+Types of Xpath
+1) Absolute xpath
+--> starts with a starting node in html
+is starts with a single slash
+
+
+2) Relative xpath
+// tagname[@attribute='attribute value']
+Example
+//input[@type='password']
+hey can u fins me the tag
+find me tag nem , with atribute and atribute value atribute value
+
+
+Absolute xpath how it works e,g
+
+<html>
+<head>
+</head>
+<body>
+<div>
+<a>dajfk<a>
+</div>
+<div>
+<img> </img>
+</div>
+</body>
+</html>
+
+
+2 inspecting using text
+
+//tagname[text()='text']
+
+3 identify by using conti=ain method
+//tagname[contains(@attribute,'attribute value')]
+
+Example
+<itagname class="form",id=form0'>
+//tagname{contains(@id,'form')]
+
+<input class="form",id=form">
+//input [contains(@id,'form')]
+
+4 identify using starts-with method
+will identify the elements with the starting partial value
+
+//tagname[starts-with(@attribute,'partial starting value')]
+
+//tagname[starts-with(text(),'partial starting value')]
+
+
+........Topic advance Xpath........
+
+Advanced Xpath is based upone parent child sibling ancestor relationship
+
+1 Identifying elemnt using following sibling
+//tagname[@attribute='attribute value']/following-sibling::tagname
+go to the tagname whose has attribute with value 'attribute value'now get me the following sibling of this tag
+// input[@id='message']/following-sibling::lable
+go to the tagname input which has the attribute id with value message now get me its following sibling with
+tagname label
+
+in order to use this advanced path(following sibling we need to identfy one sibling that can be
+identified uniquely)
+
+
+
+
+
+--------------------CSS selector--------------------
+
+CSS (cascading Styling sheet)
